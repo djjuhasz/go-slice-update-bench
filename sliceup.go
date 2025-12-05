@@ -3,8 +3,8 @@ package sliceup
 const size = 100_000
 
 func UpdateWithAppend() []int {
-	s := make([]int, size)
-	for i := range s {
+	s := make([]int, 0, size)
+	for i := range size {
 		s = append(s, i)
 	}
 	return s
